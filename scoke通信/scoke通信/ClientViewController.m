@@ -9,7 +9,7 @@
 #import "ClientViewController.h"
 #import <GCDAsyncSocket.h>
 #import "SocketManager.h"
-#define IP  @"192.168.1.100"
+#define IP  @"127.0.0.1"
 @interface ClientViewController ()<GCDAsyncSocketDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *addressTF;

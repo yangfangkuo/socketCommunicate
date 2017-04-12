@@ -71,6 +71,7 @@
 // 发送消息
 - (IBAction)sendMassage:(UIButton *)sender
 {
+    [self addText:@"发送信息成功"];
     [self.socket writeData:[self.message.text dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0];
     
     //默认发出的socket信息,客户端并不会直接就调用socketDidRead,而是需要主动去目标栈里面去读取,此处使用单利manger主动去获取
